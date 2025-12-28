@@ -1,0 +1,84 @@
+*{
+    background-color: rgb(247, 221, 221);
+    font-family: sans-serif;
+   
+}
+
+h1,h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 89, 255);
+}
+
+
+#opBasicas {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;              
+    align-items: center;    
+}
+
+#inputPergunta {
+    background-color: aqua;
+    width: 400px;  
+    height: 30px;         
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+#opBasicas .opcoes {
+    display: flex;
+    gap: 40px;          
+}
+
+
+#opcaoA, #opcaoB {
+    background-color: white;
+    color: black;
+    width: 150px;       
+    height: 150px;      
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+#listaBtn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;
+  justify-items: center; 
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; 
+  list-style: none;
+}
+
+#listaBtn button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#listaBtn button:hover {
+  background-color: #00a2ec;
+}
+
+#listaBtn button.selecionada {
+  background-color: #15cf40 !important; 
+  color: white;
+  border: 2px solid #0e8a2b;
+}
+
+#listaBtn button.destaque-botao:hover {
+  background-color: rgb(255, 210, 50);
+}
