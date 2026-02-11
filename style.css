@@ -10,16 +10,45 @@ h1,h2{
     color: rgb(0, 89, 255);
 }
 
-
 #opBasicas {
     display: flex;
     flex-direction: column; 
     gap: 15px;              
     align-items: center;    
 }
+.hidden {
+    display: none !important;
+    align-items: center;  
+}
+
+#listPesos {
+    display: flex;       
+    list-style: none;    
+    padding: 0;          
+    margin: 0;           
+    gap: 10px;  
+           
+}
+
+
+.peso {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #8B00F5; 
+    background: transparent;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.peso:hover {
+    background: #8B00F5;
+    color: white;
+}
+
+
 
 #inputPergunta {
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     width: 400px;  
     height: 30px;         
     padding: 10px;
@@ -45,7 +74,6 @@ h1,h2{
     padding: 10px;
     font-size: 16px;
 }
-
 
 #listaBtn {
   display: grid;
@@ -81,4 +109,27 @@ h1,h2{
 
 #listaBtn button.destaque-botao:hover {
   background-color: rgb(255, 210, 50);
+}
+
+#li-decisoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;            
+  align-items: center; 
+  padding: 0;
+}
+
+#li-decisoes li.criada {
+  color: #000;
+  background-color: #6ae2d8;
+  list-style: none;
+  border-radius: 8px;
+  width: 80%;
+  min-height: 120px;
+  font-size: 50px;
+  font-family: Arial;
+  display: flex;
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;
 }
